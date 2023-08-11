@@ -1,7 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-const About = () => {
+import OvasiteHeader from '@/components/OvasiteHeader';
+import UseCase from '@/components/UseCase';
+import Benefits from '@/components/Benefits';
+
+const OvaSite = () => {
   return (
     <>
       <Navbar />
@@ -32,14 +37,15 @@ const About = () => {
               OvaSite
             </h2>
             <p className='pr-5 mb-5 text-base text-gray-700 md:text-lg'>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              A visionary web-app that is currently a captivating work in
+              progress. Ovasite is not just a tool; it's your partner in
+              harnessing the power of insightful data, seamlessly merging
+              innovation with professionalism
             </p>
             <div className='flex items-center'>
               <a
-                href='/'
-                className='inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-2xl bg-[#bba14f] hover:bg-black focus:shadow-outline focus:outline-none'
+                href='#'
+                className='inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-2xl bg-[#bba14f] hover:bg-black focus:shadow-outline focus:outline-none cursor-none pointer-events-none'
               >
                 Get started
               </a>
@@ -54,9 +60,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <OvasiteHeader />
+      <Benefits />
+      <UseCase />
       <Footer />
     </>
   );
 };
 
-export default About;
+export default OvaSite;

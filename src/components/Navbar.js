@@ -47,7 +47,7 @@ export const Navbar = (props) => {
             // TODO : You can add multiple pages, following the below sample
             { title: 'Home', link: '/' },
             { title: 'Team', link: '/team' },
-            { title: 'About Us', link: '/about' },
+            // { title: 'About Us', link: '/about' },
           ].map((item, index) => (
             <NavBarItem
               key={item.title + index}
@@ -57,13 +57,14 @@ export const Navbar = (props) => {
           ))}
           {/* Conditionally rendering a OvaSite button based on whether the user is currently OvaSite or not */}
           <li>
-            <p
+            <a
+              href='/ovasite'
               className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none cursor-pointer bg-[#bba14f] text-white'
               aria-label='OvaSite'
               title='OvaSite'
             >
               OvaSite
-            </p>
+            </a>
           </li>
         </ul>
 
@@ -111,7 +112,7 @@ export const Navbar = (props) => {
                     {[
                       // TODO : You can add multiple pages, following the below sample
                       { title: 'Team', link: '/team' },
-                      { title: 'About Us', link: '/about' },
+                      // { title: 'About Us', link: '/about' },
                     ].map((item, index) => (
                       <NavBarItem
                         key={item.title + index}
@@ -120,13 +121,14 @@ export const Navbar = (props) => {
                       />
                     ))}
                     <li>
-                      <p
+                      <a
+                        href='/ovasite'
                         className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md bg-[#bba14f] hover:bg-white focus:shadow-outline focus:outline-none cursor-pointer'
                         aria-label='OvaSite'
                         title='OvaSite'
                       >
                         OvaSite
-                      </p>
+                      </a>
                     </li>
                   </ul>
                 </nav>
